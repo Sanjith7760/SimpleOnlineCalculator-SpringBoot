@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RESULT PAGE</title>
+	</head>
+	
+	<body>
+		<h1 style="color: green;">Calculation Result</h1>
+		
+		<div>
+			<p><strong>The Operation <span th:text="${operation}"></span></strong> <strong> Result is:</strong><span th:text="${result}"></span></p>
+		
+			
+			<form action="/calculator" method="post">
+						<label>Enter Number 1:</label>
+						<input type="number" name="num1" /><br>
+						<label>Enter Number 2:</label>
+						<input type="number" name="num2" /><br>
+						<div>
+						<button type="submit" name="operation" value="add">ADDITION</button>
+						<button type="submit" name="operation" value="sub">SUBTRACTION</button>
+						<button type="submit" name="operation" value="mul">MULTIPLICATION</button>
+						<button type="submit" name="operation" value="div">DIVISION</button>
+						<button type="submit" name="operation" value="mod">MODULUS</button>
+						<button type="submit" name="operation" value="sqr">SQUARE</button>
+						</div>
+				</form>
+		 </div>
+	</body>
+</html>

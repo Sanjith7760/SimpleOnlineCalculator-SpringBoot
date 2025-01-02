@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CALCULATOR</title>
+		<style>
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+				text-align: center;
+				margin-top: 50px;
+			}
+			.calculator{
+				display: inline-block;
+				text-align: left;
+				padding: 20px;
+				border: 2px solid #ccc;
+				border-radius: 10px;
+				width: 300px;
+				background-color: #f9f9f9;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1 style="color: darkmagenta;">SIMPLE CALCULATOR</h1>
+		<div class="calculator">
+		<form action="/calculator" method="post">
+			<label>Enter Number 1:</label>
+			<input type="number" name="num1" /><br>
+			<label>Enter Number 2:</label>
+			<input type="number" name="num2" /><br>
+			<div>
+			<button type="submit" name="operation" value="add">ADDITION</button><br>
+			<button type="submit" name="operation" value="sub">SUBTRACTION</button><br>
+			<button type="submit" name="operation" value="mul">MULTIPLICATION</button><br>
+			<button type="submit" name="operation" value="div">DIVISION</button><br>
+			<button type="submit" name="operation" value="mod">MODULUS</button>
+			<button type="submit" name="operation" value="sqr">SQUARE</button>
+			</div>
+		</form>
+		</div>
+	</body>
+</html>
